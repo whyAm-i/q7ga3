@@ -32,7 +32,7 @@ def root():
     return {"status": "ok"}
 
 
-@app.post("/api")
+@app.post("/extract")
 def extract_invoice(req: InvoiceRequest):
     try:
         response = client.responses.create(
